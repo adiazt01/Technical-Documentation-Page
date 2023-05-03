@@ -1,12 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technical Documentation Page</title>
-</head>
-<body>
-    
-</body>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1d0cc8531f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--  Navbar -->
+    <nav class="navbar" id="navbar">
+      <header>Python Manual</header>
+      <ul>
+        <a class="nav-link" href="#Python">Python</a>
+        <a class="nav-link" href="#Declaracion_de_variables">Declaracion de variables</a>
+        <a class="nav-link" href="#Tipos_de_datos">Tipos de datos</a>
+        <a class="nav-link" href="#Operadores_en_python">Operadores en python</a>
+      </ul>
+    </nav>
+
+    <!--  Main -->
+    <main class="main-doc" id="main-doc">
+      <!-- ! Debe haber por lo minimo 10 etiquetas p -->
+      <!-- ! El titulo se define con el header en este caso -->
+      <!-- ! Debe incluir etiquetas code -->
+      <section class="main-section">
+        <header id="Python">Python</header>
+        <hr>
+        <p>
+          Python es un lenguaje de programación ampliamente utilizado en las
+          aplicaciones web, el desarrollo de software, la ciencia de datos y el
+          machine learning (ML). Los desarrolladores utilizan Python porque es
+          eficiente y fácil de aprender, además de que se puede ejecutar en
+          muchas plataformas diferentes. El software Python se puede descargar
+          gratis, se integra bien a todos los tipos de sistemas y aumenta la
+          velocidad del desarrollo.
+        </p>
+      </section>
+      <section class="main-section">
+        <header id="Declaracion_de_variables">Declaracion de variables</header>
+        <hr>
+        <p>
+          Podemos crear una nueva variable de Python asignando un valor a una
+          etiqueta, usando el operador de asignación =.
+        </p>
+        <div class="code-container">
+            <pre>
+                <code>
+nombre = "Roger"
+                </code>
+            </pre>    
+        </div>
+        <p>Aquí tienes un ejemplo con un número:</p>
+        <div class="code-container">
+            <pre>
+                <code>
+edad = <span class>8</span>
+                </code>
+            </pre>
+        </div>
+      </section>
+      <section class="main-section">
+        <header id="Tipos_de_datos">Tipos de datos</header>
+        <hr>
+        <p>
+          Los números enteros se representan mediante la clase int. Los números
+          flotantes,decimales o fracciones, son de tipo float:
+        </p>
+        <div class="code-container">
+            <pre>
+                <code>
+edad = 1 
+type(edad) == int <code>#True</code>
+                </code>
+            </pre>
+        </div>
+        <div class="code-container">
+            <pre>
+                <code>
+fraccion = 0.1
+type(fraccion) == float #True
+                </code>
+            </pre>
+        </div>
+      </section>
+      <section class="main-section">
+        <header id="Operadores_en_python">Operadores en python</header>
+        <hr>
+        <p>
+          Los operadores de Python son símbolos que usamos para ejecutar
+          operaciones sobre valores y variables.
+        </p>
+        <br>
+        <p>
+          Podemos dividir los operadores en función del tipo de operación que
+          realizan:
+        </p>
+        <ul>
+          <li>Operador de asignación</li>
+          <li>Operadores aritméticos</li>
+          <li>Operadores de comparación</li>
+          <li>Operadores lógicos</li>
+          <li>Operadores bit a bit</li>
+        </ul>
+        <h3>Operador de asignación en Python</h3>
+        <p>
+          El operador de asignación se utiliza para asignar un valor a una
+          variable:
+        </p>
+        <div class="code-container">
+            <pre>
+                <code>
+edad = 8
+                </code>
+            </pre>
+        </div>
+        <h3>Operadores aritméticos en Python</h3>
+        <p>
+          Python tiene varios operadores aritméticos: +,-, , / (división),
+          %(resto), **(exponenciación) y // (división de piso):
+        </p>
+        <div class="code-container">
+            <pre>
+                <code>
+1 + 1 #2
+2 - 1 #1
+2 * 2 #4
+4 / 2 #2
+4 % 3 #1
+4 ** 2 #16
+4 // 2 #2     
+                </code>
+            </pre>
+        </div>
+        <h3>Operadores de comparación en Python</h3>
+        <p>Python define algunos operadores de comparación:</p>
+        <ul>
+          <li>==</span></li>
+          <li>!=</span></li>
+          <li>></li>
+          <li><</li>
+          <li>>=</li>
+          <li><=</li>
+        </ul>
+        <p>
+          Puedes usar esos operadores para obtener un valor booleano (True o
+          False) según el resultado:
+        </p>
+        <div class="code-container">
+            <pre>
+                <code>
+a = 1
+b = 2
+a == b #False 
+a != b #True 
+a > b #False 
+a <= b #True
+                </code>
+            </pre>
+        </div>
+        <h3>Operadores booleanos en Python</h3>
+        <p>Python nos da los siguientes operadores booleanos:</p>
+        <ul>
+          <li>not</li>
+          <li>and</li>
+          <li>or</li>
+        </ul>
+        <p>
+          Cuando se trabaja con atributos True o False, estos funcionan como
+          "Y", "O" y "NO" lógicos, y a menudo se usan en la evaluación de la
+          expresión condicional if:
+        </p>
+        <div class="code-container">
+        <pre>
+            <code>
+condicion1 = True condicion2 = False not condicion1 #False
+condicion1 and condicion2 #False condicion1 or condicion2 #True
+            </code>
+        </pre>
+        </div>
+      </section>
+      <section class="main-section">
+        <header id=""></header>
+        <hr>
+      </section>
+    </main>
+  </body>
 </html>
